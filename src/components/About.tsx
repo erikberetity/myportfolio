@@ -1,13 +1,120 @@
 import React from 'react';
-import styles from './About.module.css';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const About: React.FC = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section id="about" className={styles.aboutSection}>
-      <h4 className={styles.heading}>ABOUT /</h4>
-      <p className={styles.description}>
-      Multi-disciplinary designer, building contemporary<br/> brands and utilising design to craft stories that capture<br/> attention, engage and inspire.
-      </p>
+    <section id="about" className="py-32 bg-black text-white relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="mb-16"
+        >
+          <div className="text-neutral-400 tracking-widest text-sm mb-8">
+            (02) ABOUT
+          </div>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            <h2 className="text-4xl font-light mb-8 leading-tight">
+              Crafting digital experiences with precision and creativity
+            </h2>
+            <div className="space-y-6 text-neutral-400">
+              <p>
+                As a frontend developer and UI designer, I bridge the gap between design and technology, 
+                creating seamless digital experiences that engage and inspire.
+              </p>
+              <p>
+                With a strong foundation in modern web technologies and an eye for design, 
+                I transform complex problems into elegant solutions.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="grid grid-cols-2 gap-8"
+          >
+            <div>
+              <h3 className="text-xl font-light mb-4">Experience</h3>
+              <ul className="space-y-4 text-neutral-400">
+                <li>
+                  <span className="block text-white">Frontend Development</span>
+                  <span className="text-sm">1+ years</span>
+                </li>
+                <li>
+                  <span className="block text-white">UI/UX Design</span>
+                  <span className="text-sm">1+ years</span>
+                </li>
+                <li>
+                  <span className="block text-white">Web Animation</span>
+                  <span className="text-sm">1+ years</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-light mb-4">Services</h3>
+              <ul className="space-y-4 text-neutral-400">
+                <li>
+                  <span className="block text-white">Web Development</span>
+                  <span className="text-sm">Frontend & Backend</span>
+                </li>
+                <li>
+                  <span className="block text-white">UI/UX Design</span>
+                  <span className="text-sm">Web & Mobile</span>
+                </li>
+                <li>
+                  <span className="block text-white">Digital Strategy</span>
+                  <span className="text-sm">Consulting</span>
+                </li>
+              </ul>
+            </div>
+          </motion.div>
+        </div>
+
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          className="mt-24 text-center"
+        >
+          <a href="#skills" className="text-white hover:text-neutral-400 transition-colors duration-300">
+            <span className="block mb-4">Explore my skills</span>
+            <svg 
+              className="w-6 h-6 mx-auto animate-bounce" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </a>
+        </motion.div>
+      </div>
     </section>
   );
 };
