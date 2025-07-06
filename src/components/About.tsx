@@ -31,16 +31,16 @@ const About: React.FC = () => {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <h2 className="text-4xl font-light mb-8 leading-tight">
-              Crafting digital experiences with precision and creativity
+            Maintaining systems with precision. Solving problems with purpose.
             </h2>
             <div className="space-y-6 text-neutral-400">
               <p>
-                As a frontend developer and UI designer, I bridge the gap between design and technology, 
-                creating seamless digital experiences that engage and inspire.
+              As a system administrator, I connect people and technology by maintaining secure networks,
+               troubleshooting critical issues, and keeping infrastructure resilient and responsive.
               </p>
               <p>
-                With a strong foundation in modern web technologies and an eye for design, 
-                I transform complex problems into elegant solutions.
+              With a solid grasp of modern IT environments and a practical approach,
+               I turn infrastructure chaos into clean, scalable solutions.
               </p>
             </div>
           </motion.div>
@@ -56,15 +56,15 @@ const About: React.FC = () => {
               <h3 className="text-xl font-light mb-4">Experience</h3>
               <ul className="space-y-4 text-neutral-400">
                 <li>
-                  <span className="block text-white">Frontend Development</span>
+                  <span className="block text-white">Windows Server & Active Directory Administration</span>
                   <span className="text-sm">1+ years</span>
                 </li>
                 <li>
-                  <span className="block text-white">UI/UX Design</span>
+                  <span className="block text-white">Network Configuration & Troubleshooting (TCP/IP, DNS/DHCP, VLANs)</span>
                   <span className="text-sm">1+ years</span>
                 </li>
                 <li>
-                  <span className="block text-white">Web Animation</span>
+                  <span className="block text-white">IT Support & Ticketing Systems (1st/2nd Line)</span>
                   <span className="text-sm">1+ years</span>
                 </li>
               </ul>
@@ -74,16 +74,16 @@ const About: React.FC = () => {
               <h3 className="text-xl font-light mb-4">Services</h3>
               <ul className="space-y-4 text-neutral-400">
                 <li>
-                  <span className="block text-white">Web Development</span>
-                  <span className="text-sm">Frontend & Backend</span>
+                  <span className="block text-white">System & Network Administration</span>
+                  <span className="text-sm">Windows Server, AD, Group Policy, DNS/DHCP</span>
                 </li>
                 <li>
-                  <span className="block text-white">UI/UX Design</span>
-                  <span className="text-sm">Web & Mobile</span>
+                  <span className="block text-white">VPN & Remote Access Solutions</span>
+                  <span className="text-sm">Site‑to‑site, remote‑worker, MFA integration</span>
                 </li>
                 <li>
-                  <span className="block text-white">Digital Strategy</span>
-                  <span className="text-sm">Consulting</span>
+                  <span className="block text-white">Infrastructure Monitoring & Automation</span>
+                  <span className="text-sm">PowerShell scripting, proactive maintenance, incident response</span>
                 </li>
               </ul>
             </div>

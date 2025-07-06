@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
-  const text = "FRONTEND DEVELOPER / UI DESIGNER / CREATIVE TECHNOLOGIST";
+  const text = "SYSTEM ADMINISTRATOR / NETWORK ENGINEER / INFRASTRUCTURE SUPPORT";
   const letters = Array.from(text);
 
   return (
@@ -41,11 +41,11 @@ const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.4 }}
           className="text-4xl md:text-5xl lg:text-6xl font-light mb-12 leading-tight text-neutral-400"
         >
-          Building digital
+          Behind every
           <br />
-          experiences that
+          smooth system is a
           <br />
-          <span className="text-white">matter.</span>
+          <span className="text-white">strong admin.</span>
         </motion.h2>
 
         <motion.div 

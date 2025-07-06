@@ -9,12 +9,12 @@ const Skills: React.FC = () => {
   });
 
   const skills = [
-    { name: 'Frontend Development', level: 90 },
-    { name: 'UI/UX Design', level: 85 },
-    { name: 'React & TypeScript', level: 88 },
-    { name: 'Node.js', level: 82 },
-    { name: 'Web Animation', level: 87 },
-    { name: 'Responsive Design', level: 92 },
+    { name: 'Windows Server Administration ', level: 92 },
+    { name: 'Active Directory & Group Policy', level: 90 },
+    { name: 'Network Troubleshooting (TCP/IP, DNS, DHCP)', level: 88 },
+    { name: 'IT Support & Ticketing Systems', level: 91 },
+    { name: 'VPN & Remote Access Configuration', level: 85 },
+    { name: 'PowerShell Scripting & Automation', level: 80 },
   ];
 
   return (
@@ -69,7 +69,7 @@ const Skills: React.FC = () => {
           className="mt-24 text-center"
         >
           <p className="text-neutral-400 max-w-2xl mx-auto mb-8">
-            Always learning and exploring new technologies to stay at the forefront of web development.
+          Continuously learning and adapting to evolving IT environments to keep systems secure, stable, and efficient.
           </p>
           <a 
             href="#contact" 
