@@ -64,7 +64,7 @@ const About: React.FC = () => {
                   <span className="text-sm">2+ years</span>
                 </li>
                 <li>
-                  <span className="block text-white">IT Support & Ticketing Systems (1st/2nd Line)</span>
+                  <span className="block text-white">Security Monitoring & Incident Response</span>
                   <span className="text-sm">2+ years</span>
                 </li>
               </ul>

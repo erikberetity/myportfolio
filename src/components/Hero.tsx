@@ -41,11 +41,12 @@ const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.4 }}
           className="text-4xl md:text-5xl lg:text-6xl font-light mb-12 leading-tight text-neutral-400"
         >
-          Behind every
+          Every secure network
           <br />
-          smooth system is a
+          has someone
           <br />
-          <span className="text-white">strong admin.</span>
+          watching the gates.
+          <span className="text-white">That's me.</span>
         </motion.h2>
 
         <motion.div 
