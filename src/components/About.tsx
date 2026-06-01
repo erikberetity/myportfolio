@@ -31,16 +31,16 @@ const About: React.FC = () => {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <h2 className="text-4xl font-light mb-8 leading-tight">
-            Maintaining systems with precision. Solving problems with purpose.
+            Securing infrastructure. Engineering resilient networks. Staying ahead of threats.
             </h2>
             <div className="space-y-6 text-neutral-400">
               <p>
-              As a system administrator, I connect people and technology by maintaining secure networks,
-               troubleshooting critical issues, and keeping infrastructure resilient and responsive.
+              As a cybersecurity and network engineer, I design and defend infrastructure,
+              hardening systems against threats, architecting secure networks, and ensuring services stay resilient under pressure.
               </p>
               <p>
-              With a solid grasp of modern IT environments and a practical approach,
-               I turn infrastructure chaos into clean, scalable solutions.
+              With deep expertise across network security, system engineering, and threat mitigation,
+               I build environments that are not just functional, but fortified.
               </p>
             </div>
           </motion.div>
@@ -57,15 +57,15 @@ const About: React.FC = () => {
               <ul className="space-y-4 text-neutral-400">
                 <li>
                   <span className="block text-white">Windows Server & Active Directory Administration</span>
-                  <span className="text-sm">1+ years</span>
+                  <span className="text-sm">2+ years</span>
                 </li>
                 <li>
                   <span className="block text-white">Network Configuration & Troubleshooting (TCP/IP, DNS/DHCP, VLANs)</span>
-                  <span className="text-sm">1+ years</span>
+                  <span className="text-sm">2+ years</span>
                 </li>
                 <li>
                   <span className="block text-white">IT Support & Ticketing Systems (1st/2nd Line)</span>
-                  <span className="text-sm">1+ years</span>
+                  <span className="text-sm">2+ years</span>
                 </li>
               </ul>
             </div>
