@@ -105,21 +105,7 @@ const Footer: React.FC = () => {
             <p className="text-neutral-400 text-sm">
               © {currentYear} Beretity Erik. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0">
-              <a 
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors duration-300 text-sm"
-              >
-                Privacy Policy
-              </a>
-              <span className="mx-4 text-neutral-600">|</span>
-              <a 
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors duration-300 text-sm"
-              >
-                Terms of Service
-              </a>
-            </div>
+            <div className="mt-4 md:mt-0"></div>
           </div>
         </motion.div>
       </div>
